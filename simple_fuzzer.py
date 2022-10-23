@@ -8,7 +8,7 @@ def check_args():
                                  usage="Script options")
     parser.add_argument("-u", help="Enter domain http://site.com/FUZZ")
     parser.add_argument("-w", help="Name and path of wordlist")
-    parser.add_argument("-t", help="Number of threads", type=int) # добавить type=int
+    parser.add_argument("-t", help="Number of threads", type=int) 
     args = parser.parse_args()
     if (args.u == None and args.w == None ):
         parser.print_help()
